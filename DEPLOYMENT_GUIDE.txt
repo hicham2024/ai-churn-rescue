@@ -1,0 +1,13 @@
+AI Churn Rescue Sales Website — Deployment Guide
+
+Recommended quick deploy:
+1. Open index.html locally to preview.
+2. Replace your-email@example.com with your real email.
+3. Add your Calendly/booking link.
+4. Replace screenshot placeholders with real screenshots from V25.3.
+5. Drag the full folder to Netlify or upload to your web host.
+
+Suggested domains:
+- aichurnrescue.com
+- churnrescue.ai
+- retentionrescue.ai
