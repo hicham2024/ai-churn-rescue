@@ -15,3 +15,17 @@ Before publishing:
 2. Replace screenshot placeholders with real screenshots.
 3. Add a real booking link such as Calendly, HubSpot Meetings or Google Calendar appointments.
 4. Upload to Netlify, Vercel, GitHub Pages, Cloudflare Pages or any static hosting.
+
+
+## Screenshots included
+
+The landing page now includes real product screenshots in:
+
+`assets/screenshots/`
+
+Files:
+- dashboard-executive-overview.png
+- customer-intelligence-executive-insights.png
+- priority-accounts-account-detail.png
+- roi-csm-pipeline.png
+- connectors-admin.png
