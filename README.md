@@ -30,3 +30,11 @@ Files:
 - roi-csm-pipeline.png
 - connectors-admin.png
 
+
+## Pricing update
+
+- Starter Pilot: from €2,500
+- Proof of Value: from €7,500 after discovery
+- Enterprise Pilot: from €15,000+
+- Internal License: €25,000–€60,000
+- Demo CTA points to Calendly: https://calendly.com/hichamipg1/30min

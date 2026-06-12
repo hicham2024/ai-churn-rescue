@@ -35,3 +35,6 @@
     grid-template-columns: 1fr;
   }
 }
+
+.pricing-grid-four { grid-template-columns: repeat(4, 1fr); }
+@media(max-width:1050px){.pricing-grid-four{grid-template-columns:1fr}}
