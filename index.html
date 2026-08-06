@@ -1,173 +1,434 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Churn Rescue — Detect Customer Churn Risk Before Revenue Is Lost</title>
-  <meta name="description" content="AI Churn Rescue connects CRM, support and billing signals to identify at-risk customers, quantify revenue exposure and recommend the next best CSM action." />
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Churn Rescue — Customer Retention Intelligence</title>
+  <meta name="description" content="AI Churn Rescue helps B2B companies detect churn risk, quantify revenue at risk and prioritize customer rescue actions before revenue is lost.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top"><span class="brand-mark">AI</span><span>AI Churn Rescue</span></a>
-    <nav>
-      <a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#how">How it works</a>
-      <a href="#connectors">Connectors</a><a href="#pilot">Pilot</a><a href="#pricing">Pricing</a><a href="#demo">Book a Demo</a>
-    </nav>
+    <div class="container nav">
+      <a class="logo" href="#top">AI Churn Rescue</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#how">How it works</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#pricing">Pricing</a>
+        <a class="nav-cta" href="#demo">Book a Demo</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Customer retention intelligence for B2B teams</p>
-        <h1>Detect customer churn risk before revenue is lost.</h1>
-        <p class="hero-subtitle">AI Churn Rescue connects CRM, support and billing signals to identify at-risk customers, quantify revenue exposure and recommend the next best CSM action.</p>
-        <p class="for-who">For B2B SaaS, telecom, subscription businesses and customer success teams.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#demo">Book a 30-minute demo</a>
-          <a class="button secondary" href="#pilot">Start Free Trial</a><a class="button secondary" href="#demo">Request Starter Pilot</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Customer retention intelligence for B2B teams</p>
+          <h1>Detect customer churn risk before revenue is lost.</h1>
+          <p class="lead">AI Churn Rescue connects CRM, support, billing and usage signals to identify at-risk customers, quantify revenue exposure and recommend the next best CSM action.</p>
+          <p class="sublead">Built for B2B SaaS, telecom, subscription businesses and customer success teams.</p>
+          <div class="cta-row">
+            <a class="button primary" href="https://calendly.com/hichamipg1/30min" target="_blank" rel="noopener">Book a 30-minute demo</a>
+            <a class="button secondary" href="#pilot">Start Free Trial</a>
+            <a class="button ghost" href="#demo">Request Starter Pilot</a>
+          </div>
+          <div class="signal-row">
+            <span>CRM</span>
+            <span>Support</span>
+            <span>Billing</span>
+            <span>Usage</span>
+            <span>Executive PDF</span>
+            <span>CSM action plans</span>
+          </div>
         </div>
-        <div class="trust-row"><span>CRM + Support + Billing</span><span>Executive PDF reports</span><span>CSM action plans</span></div>
-      </div>
-      <div class="hero-card">
-        <div class="card-topline"><span class="status-dot"></span> Live demo view</div>
-        <div class="metric-grid">
-          <div><small>Revenue at risk</small><strong>€39.7M</strong></div>
-          <div><small>Priority accounts</small><strong>299</strong></div>
-          <div><small>Savable revenue</small><strong>€16.4M</strong></div>
-          <div><small>ARR at risk</small><strong>74.8%</strong></div>
-        </div>
-        <div class="risk-list">
-          <div><b>P1</b><span>Critical renewal risk</span><em>Executive escalation</em></div>
-          <div><b>P2</b><span>Support + billing risk</span><em>CSM rescue play</em></div>
-          <div><b>P3</b><span>Usage decline</span><em>Product adoption play</em></div>
-        </div>
+
+        <aside class="hero-card" aria-label="Product demo metrics">
+          <div class="hero-card-top">
+            <span class="live-dot"></span>
+            <strong>Live demo view</strong>
+          </div>
+          <div class="metric-grid">
+            <div class="metric"><small>Revenue at risk</small><strong>€39.7M</strong></div>
+            <div class="metric"><small>Priority accounts</small><strong>299</strong></div>
+            <div class="metric"><small>Savable revenue</small><strong>€16.4M</strong></div>
+            <div class="metric"><small>ARR at risk</small><strong>74.8%</strong></div>
+          </div>
+          <div class="priority-list">
+            <div><b>P1</b><span>Critical renewal risk</span><em>Executive escalation</em></div>
+            <div><b>P2</b><span>Support + billing risk</span><em>CSM rescue play</em></div>
+            <div><b>P3</b><span>Usage decline</span><em>Product adoption play</em></div>
+          </div>
+          <p class="built-for">Built for signals from <b>HubSpot</b>, <b>Salesforce</b>, <b>Zendesk</b>, <b>Stripe</b> and <b>Chargebee</b>.</p>
+        </aside>
       </div>
     </section>
-
-    <section class="logos"><span>Built for signals from</span><strong>HubSpot</strong><strong>Salesforce</strong><strong>Zendesk</strong><strong>Stripe</strong><strong>Chargebee</strong></section>
 
     <section class="section" id="problem">
-      <div class="section-head"><p class="eyebrow">Problem</p><h2>Churn signals are visible before customers leave — but they are scattered.</h2><p>Customer risk usually appears across multiple systems: support tickets, CRM notes, payment delays, renewal timing and declining usage. Teams react too late because no single view connects these signals to revenue exposure.</p></div>
-      <div class="cards three">
-        <article class="card"><h3>Signals are fragmented</h3><p>CRM, support, billing and usage data live in different tools.</p></article>
-        <article class="card"><h3>CSMs lack focus</h3><p>Teams need to prioritize the highest revenue at risk.</p></article>
-        <article class="card"><h3>Leadership lacks clarity</h3><p>Executives need a simple view of ARR at risk and rescue actions.</p></article>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Problem</p>
+            <h2>Churn signals are visible before customers leave — but they are scattered.</h2>
+          </div>
+          <p>Customer risk usually appears across support tickets, CRM notes, payment delays, renewal timing and declining usage. Teams react too late because no single view connects these signals to revenue exposure.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <h3>Signals are fragmented</h3>
+            <p>CRM, support, billing and usage data live in different tools.</p>
+          </article>
+          <article class="card">
+            <h3>CSMs lack focus</h3>
+            <p>Teams need to prioritize the highest revenue at risk, not just the loudest customer.</p>
+          </article>
+          <article class="card">
+            <h3>Leadership lacks clarity</h3>
+            <p>Executives need a simple view of ARR at risk, quick wins and rescue actions.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section split" id="solution">
-      <div><p class="eyebrow">Solution</p><h2>One churn rescue command center for revenue, support and customer success teams.</h2><p>AI Churn Rescue turns customer signals into a prioritized rescue pipeline: risk score, revenue at risk, risk explanation, next best action, CSM notes and executive-ready PDF reports.</p>
-        <ul class="checklist"><li>Detect high-risk accounts before renewal.</li><li>Quantify ARR and revenue exposure.</li><li>Explain the drivers behind each risk score.</li><li>Recommend CSM actions and customer outreach.</li><li>Export executive reports.</li></ul>
+    <section class="section alt" id="solution">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Solution</p>
+          <h2>One churn rescue command center for revenue, support and customer success teams.</h2>
+          <p>AI Churn Rescue turns customer signals into a prioritized rescue pipeline: risk score, revenue at risk, explanation, next best action, CSM notes and executive-ready reports.</p>
+          <ul class="check-list">
+            <li>Detect high-risk accounts before renewal.</li>
+            <li>Quantify ARR and revenue exposure.</li>
+            <li>Explain the drivers behind each risk score.</li>
+            <li>Recommend CSM actions and customer outreach.</li>
+            <li>Export executive reports and action plans.</li>
+          </ul>
+        </div>
+        <div class="insight-card">
+          <h3>Executive insights</h3>
+          <div class="ready-row"><span>Top revenue risks</span><b>Ready</b></div>
+          <div class="ready-row"><span>Quick wins</span><b>Ready</b></div>
+          <div class="ready-row"><span>CSM overload</span><b>Ready</b></div>
+          <div class="ready-row"><span>Risk by renewal window</span><b>Ready</b></div>
+          <div class="ready-row"><span>Executive PDF</span><b>Ready</b></div>
+        </div>
       </div>
-      <div class="panel-preview"><h3>Executive insights</h3><div><span>Top revenue risks</span><b>Ready</b></div><div><span>Quick wins</span><b>Ready</b></div><div><span>CSM overload</span><b>Ready</b></div><div><span>Risk by renewal window</span><b>Ready</b></div><div><span>Executive PDF</span><b>Ready</b></div></div>
     </section>
 
     <section class="section" id="how">
-      <div class="section-head"><p class="eyebrow">How it works</p><h2>From customer data to rescue actions in four steps.</h2></div>
-      <div class="steps"><div class="step"><b>1</b><h3>Connect or upload data</h3><p>Use CSV or connect CRM, support and billing systems.</p></div><div class="step"><b>2</b><h3>Score churn risk</h3><p>Analyze renewal, support, sentiment, payment and usage signals.</p></div><div class="step"><b>3</b><h3>Prioritize actions</h3><p>Rank P1/P2 accounts by revenue at risk.</p></div><div class="step"><b>4</b><h3>Report ROI</h3><p>Export reports and weekly action plans.</p></div></div>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2>From customer data to rescue actions in four steps.</h2>
+          </div>
+          <p>The first value moment should happen in less than 10 minutes: upload a CSV, see revenue at risk, then decide whether a Starter Pilot makes sense.</p>
+        </div>
+        <div class="cards four">
+          <article class="card step"><span class="step-number">1</span><h3>Connect or upload data</h3><p>Use CSV first, then connect CRM, support and billing systems later.</p></article>
+          <article class="card step"><span class="step-number">2</span><h3>Score churn risk</h3><p>Analyze renewal, support, sentiment, payment and usage signals.</p></article>
+          <article class="card step"><span class="step-number">3</span><h3>Prioritize actions</h3><p>Rank P1/P2 accounts by revenue at risk and urgency.</p></article>
+          <article class="card step"><span class="step-number">4</span><h3>Report ROI</h3><p>Export reports, weekly plans and board-ready summaries.</p></article>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="connectors">
-      <div class="section-head"><p class="eyebrow">Connectors</p><h2>Unify CRM, support and billing signals.</h2><p>The strongest churn predictions combine who the customer is, what they experience and what revenue is at risk.</p></div>
-      <div class="connector-grid"><article class="connector-card"><h3>HubSpot / Salesforce</h3><p>Account, owner, industry, ARR, lifecycle, opportunities and renewal context.</p><span>CRM context</span></article><article class="connector-card"><h3>Zendesk</h3><p>Tickets, chat signals, tags, urgent issues, sentiment and support blockers.</p><span>Support intelligence</span></article><article class="connector-card"><h3>Stripe / Chargebee</h3><p>Subscriptions, failed payments, dunning, invoices and cancellation signals.</p><span>Billing risk</span></article></div>
+    <section class="section alt" id="connectors">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Connectors</p>
+            <h2>Unify CRM, support and billing signals.</h2>
+          </div>
+          <p>The strongest churn predictions combine who the customer is, what they experience and what revenue is at risk.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <h3>HubSpot / Salesforce</h3>
+            <p>Account, owner, industry, ARR, lifecycle, opportunities and renewal context.</p>
+            <span class="tag">CRM context</span>
+          </article>
+          <article class="card">
+            <h3>Zendesk</h3>
+            <p>Tickets, chat signals, tags, urgent issues, sentiment and support blockers.</p>
+            <span class="tag">Support intelligence</span>
+          </article>
+          <article class="card">
+            <h3>Stripe / Chargebee</h3>
+            <p>Subscriptions, failed payments, dunning, invoices and cancellation signals.</p>
+            <span class="tag">Billing risk</span>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="screenshots">
-      <div class="section-head">
-        <p class="eyebrow">Screenshots</p>
-        <h2>What prospects see in the demo.</h2>
-        <p>Real product views from AI Churn Rescue: dashboard, executive insights, connectors, ROI and customer rescue workflow.</p>
-      </div>
-
-      <div class="screenshot-showcase">
-        <article class="screenshot-feature">
-          <img src="./assets/screenshots/dashboard-executive-overview.png" alt="AI Churn Rescue dashboard and executive overview" />
+      <div class="container">
+        <div class="section-head">
           <div>
-            <h3>Dashboard & Executive Overview</h3>
-            <p>Monitor accounts, ARR, revenue at risk, P1/P2 priorities and board-ready executive insights.</p>
+            <p class="eyebrow">Screenshots</p>
+            <h2>What prospects see in the demo.</h2>
           </div>
-        </article>
+          <p>Real product views from AI Churn Rescue: dashboard, executive insights, connectors, ROI and customer rescue workflow.</p>
+        </div>
 
-        <article class="screenshot-feature">
-          <img src="./assets/screenshots/customer-intelligence-executive-insights.png" alt="AI Churn Rescue executive insights and revenue risk analysis" />
-          <div>
+        <div class="screenshot-block">
+          <div class="screenshot-frame">
+            <img src="assets/screenshots/dashboard-executive-overview.png" alt="AI Churn Rescue dashboard and executive overview">
+          </div>
+          <h3>Dashboard & Executive Overview</h3>
+          <p>Monitor accounts, ARR, revenue at risk, P1/P2 priorities and board-ready insights.</p>
+        </div>
+
+        <div class="screenshot-grid">
+          <article>
+            <div class="screenshot-frame small">
+              <img src="assets/screenshots/priority-accounts-account-detail.png" alt="Priority accounts and account detail">
+            </div>
+            <h3>Priority Accounts</h3>
+            <p>Rank accounts by risk, revenue exposure, playbook and next best action.</p>
+          </article>
+          <article>
+            <div class="screenshot-frame small">
+              <img src="assets/screenshots/customer-intelligence-executive-insights.png" alt="Customer intelligence executive insights">
+            </div>
             <h3>Executive Insights</h3>
-            <p>Identify top revenue risks, quick wins, CSM overload, risky segments and renewal-window exposure.</p>
-          </div>
-        </article>
+            <p>Identify top risks, quick wins, CSM overload and renewal-window exposure.</p>
+          </article>
+        </div>
 
-        <article class="screenshot-feature">
-          <img src="./assets/screenshots/priority-accounts-account-detail.png" alt="AI Churn Rescue priority accounts and customer intelligence workflow" />
-          <div>
-            <h3>Customer Intelligence Workflow</h3>
-            <p>Review priority accounts, account-level risk drivers, recommended owner and next best action.</p>
-          </div>
-        </article>
-
-        <article class="screenshot-feature">
-          <img src="./assets/screenshots/roi-csm-pipeline.png" alt="AI Churn Rescue ROI business case and CSM pipeline" />
-          <div>
+        <div class="screenshot-grid">
+          <article>
+            <div class="screenshot-frame small">
+              <img src="assets/screenshots/roi-csm-pipeline.png" alt="ROI business case and CSM pipeline">
+            </div>
             <h3>ROI & CSM Pipeline</h3>
-            <p>Show estimated churn avoided, margin impact, potential ROI, status tracking and CSM workload.</p>
-          </div>
-        </article>
-
-        <article class="screenshot-feature">
-          <img src="./assets/screenshots/connectors-admin.png" alt="AI Churn Rescue connectors and admin settings" />
-          <div>
+            <p>Show estimated churn avoided, margin impact, status tracking and CSM workload.</p>
+          </article>
+          <article>
+            <div class="screenshot-frame small">
+              <img src="assets/screenshots/connectors-admin.png" alt="Connectors and admin settings">
+            </div>
             <h3>Connectors & Admin</h3>
             <p>Demonstrate connector readiness for HubSpot, Salesforce, Zendesk, Stripe, Chargebee and admin controls.</p>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section split" id="roi">
-      <div><p class="eyebrow">ROI example</p><h2>Show the business case in revenue terms.</h2><p>If a company has €40M in revenue at risk and the pilot helps save even 5%–15%, the financial impact can justify the pilot and annual license.</p></div>
-      <div class="roi-box"><div><span>Revenue at risk</span><b>€39.7M</b></div><div><span>Assumed save rate</span><b>15%</b></div><div><span>Estimated churn avoided</span><b>€5.9M</b></div><div><span>Pilot price</span><b>from €7.5k</b></div></div>
+    <section class="section alt" id="roi">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">ROI example</p>
+          <h2>Show the business case in revenue terms.</h2>
+          <p>If a company has €40M in revenue at risk and the pilot helps save even 5%–15%, the financial impact can justify the pilot and annual license.</p>
+        </div>
+        <div class="roi-panel">
+          <div class="roi-grid">
+            <div class="roi-item"><small>Revenue at risk</small><strong>€39.7M</strong></div>
+            <div class="roi-item"><small>Assumed save rate</small><strong>15%</strong></div>
+            <div class="roi-item"><small>Estimated churn avoided</small><strong>€5.9M</strong></div>
+            <div class="roi-item"><small>Starter Pilot</small><strong>from €2.5k</strong></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section pilot" id="pilot">
-      <div class="section-head"><p class="eyebrow">Pilot offer</p><h2>Let companies test first, then upgrade when convinced.</h2><p>A clear self-service path: Free Trial, Starter, Proof of Value, then Enterprise. No online payment is active yet. Pilots are requested after a demo and handled by proposal/invoice.</p></div>
-      <div class="pilot-card"><div><h3>AI Churn Rescue — Free Trial</h3><ul class="checklist"><li>50 customer accounts</li><li>CSV upload only</li><li>No PDF export</li><li>Churn risk dashboard</li><li>Revenue-at-risk preview</li><li>Priority account preview</li><li>Request a pilot when ready</li></ul></div><div class="pilot-price"><span>Start free</span><strong>Free Trial</strong><p>50 accounts · CSV only</p><a class="button primary" href="#demo">Start Free Trial</a></div></div>
+    <section class="section" id="pilot">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Pilot offer</p>
+          <h2>Let companies test first, then request a qualified pilot.</h2>
+          <p>A clear commercial path: Free Trial, demo call, Starter Pilot request, then Proof of Value or Enterprise discussion. No online payment is active yet. Pilots are handled by proposal and invoice.</p>
+        </div>
+        <div class="offer-card">
+          <h3>AI Churn Rescue — Free Trial</h3>
+          <ul class="check-list">
+            <li>50 customer accounts.</li>
+            <li>CSV upload only.</li>
+            <li>No PDF export.</li>
+            <li>Churn risk dashboard.</li>
+            <li>Revenue-at-risk preview.</li>
+            <li>Priority account preview.</li>
+            <li>Request a pilot when ready.</li>
+          </ul>
+          <a class="button primary" href="#demo">Start Free Trial</a>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="pricing">
-      <div class="section-head"><p class="eyebrow">Pricing</p><h2>Self-service pricing path.</h2><p>Prospects can start free, book a demo, then request a Starter Pilot. Enterprise remains a custom sales conversation.</p></div>
-      <div class="pricing-grid pricing-grid-four"><article class="price-card"><h3>Free Trial</h3><strong>Free</strong><p>For companies that want to test the product themselves.</p><ul><li>50 accounts</li><li>CSV only</li><li>No PDF export</li><li>Self-service trial</li></ul></article><article class="price-card highlighted"><h3>Starter</h3><strong>€2,500</strong><p>For a first business validation with a larger customer file.</p><ul><li>500 accounts</li><li>CSV upload</li><li>Short report</li><li>No long-term commitment</li></ul></article><article class="price-card"><h3>Proof of Value</h3><strong>€7,500</strong><p>For serious validation with broader customer data.</p><ul><li>10,000 accounts</li><li>CSV + 1 connector</li><li>Executive PDF</li><li>ROI review</li></ul></article><article class="price-card"><h3>Enterprise</h3><strong>Custom quote</strong><p>For private deployment and connector-heavy implementations.</p><ul><li>Connectors</li><li>Support</li><li>Private deployment</li><li>Custom onboarding</li></ul></article></div>
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Pricing</p>
+            <h2>Simple offer ladder for B2B validation.</h2>
+          </div>
+          <p>Prospects can start free, book a demo, then request a Starter Pilot. Enterprise remains a custom sales conversation.</p>
+        </div>
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Free Trial</h3>
+            <p class="price">Free</p>
+            <p>For companies that want to test the product themselves.</p>
+            <ul>
+              <li>50 accounts</li>
+              <li>CSV only</li>
+              <li>No PDF export</li>
+              <li>Self-service trial</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <span class="featured-label">Recommended first step</span>
+            <h3>Starter Pilot</h3>
+            <p class="price">€2,500</p>
+            <p>For first business validation with a larger customer file.</p>
+            <ul>
+              <li>500 accounts</li>
+              <li>CSV upload</li>
+              <li>Short report</li>
+              <li>No long-term commitment</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Proof of Value</h3>
+            <p class="price">€7,500</p>
+            <p>For serious validation with broader customer data.</p>
+            <ul>
+              <li>10,000 accounts</li>
+              <li>CSV + 1 connector</li>
+              <li>Executive PDF</li>
+              <li>ROI review</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <p>For private deployment and connector-heavy implementations.</p>
+            <ul>
+              <li>Connectors</li>
+              <li>Support</li>
+              <li>Private deployment</li>
+              <li>Custom onboarding</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note-box">No online payment is active yet. Pilots are requested after a demo and handled by proposal/invoice.</p>
+      </div>
     </section>
 
     <section class="section" id="video">
-      <div class="section-head"><p class="eyebrow">Demo video</p><h2>2–3 minute demo video script.</h2><p>Record this with Loom, Zoom, Canva, CapCut, OBS or any screen recorder.</p></div>
-      <div class="video-box"><div class="play-button">▶</div><div><h3>Suggested video flow</h3><ol><li>Introduce the churn problem.</li><li>Show dashboard and revenue at risk.</li><li>Open Executive Insights.</li><li>Open one priority account.</li><li>Show connectors and pilot offer.</li></ol><a class="button secondary" href="./demo-video-script.html">Open full video script</a></div></div>
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Demo video</p>
+          <h2>2–3 minute demo video script.</h2>
+          <p>Use this flow for Loom, Zoom, Canva, CapCut, OBS or any screen recorder.</p>
+        </div>
+        <div class="demo-box">
+          <h3>Suggested video flow</h3>
+          <ol>
+            <li>Introduce the churn problem.</li>
+            <li>Show dashboard and revenue at risk.</li>
+            <li>Open Executive Insights.</li>
+            <li>Open one priority account.</li>
+            <li>Show connectors and pilot offer.</li>
+          </ol>
+          <a class="button secondary" href="demo-video-script.html">Open full video script</a>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="data-checklist">
-      <div class="section-head"><p class="eyebrow">Data checklist</p><h2>What we need from the client.</h2></div>
-      <div class="cards three"><article class="card"><h3>CRM data</h3><p>Account name, ARR/MRR, owner, industry, plan, renewal date.</p></article><article class="card"><h3>Support data</h3><p>Tickets, chat history, priority, tags, status, ticket age and sentiment.</p></article><article class="card"><h3>Billing data</h3><p>Subscription status, invoices, failed payments, dunning and cancellation status.</p></article></div>
-      <a class="button secondary" href="./data-checklist.html">Open full data checklist</a>
+    <section class="section alt" id="checklist">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Data checklist</p>
+            <h2>What we need from the client.</h2>
+          </div>
+          <p>The pilot can start with CSV. Connectors can be added later once the first value is proven.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <h3>CRM data</h3>
+            <p>Account name, ARR/MRR, owner, industry, plan and renewal date.</p>
+          </article>
+          <article class="card">
+            <h3>Support data</h3>
+            <p>Tickets, chat history, priority, tags, status, ticket age and sentiment.</p>
+          </article>
+          <article class="card">
+            <h3>Billing data</h3>
+            <p>Subscription status, invoices, failed payments, dunning and cancellation status.</p>
+          </article>
+        </div>
+        <div class="cta-row">
+          <a class="button secondary" href="data-checklist.html">Open full data checklist</a>
+        </div>
+      </div>
     </section>
 
-    <section class="section faq" id="faq">
-      <div class="section-head"><p class="eyebrow">FAQ</p><h2>Common buyer questions.</h2></div>
-      <details open><summary>Is this a self-service SaaS?</summary><p>For now, AI Churn Rescue is best sold as a paid pilot, internal license or enterprise connector package.</p></details>
-      <details><summary>Can we use Zendesk chat and tickets?</summary><p>Yes. Zendesk can provide support pressure, tickets, tags, urgency, sentiment and cancellation signals.</p></details>
-      <details><summary>Do we need all connectors?</summary><p>No. A pilot can start with CSV or one connector. The strongest results come from CRM + support + billing together.</p></details>
-      <details><summary>Is there a long-term commitment?</summary><p>No. The 30-day Proof of Value has no required long-term commitment.</p></details>
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Common buyer questions.</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Is this a self-service SaaS?</summary>
+            <p>For now, AI Churn Rescue is best sold as a free trial followed by a demo and a qualified Starter Pilot. The fully automated SaaS flow can be activated later.</p>
+          </details>
+          <details>
+            <summary>Can we use Zendesk chat and tickets?</summary>
+            <p>Yes. The product is designed to combine support tickets, sentiment and urgency with CRM and billing signals.</p>
+          </details>
+          <details>
+            <summary>Do we need all connectors?</summary>
+            <p>No. The first pilot can start with CSV. HubSpot, Salesforce, Zendesk, Stripe or Chargebee can be connected later.</p>
+          </details>
+          <details>
+            <summary>Is there a long-term commitment?</summary>
+            <p>No. The Starter Pilot is designed for quick validation before a Proof of Value or Enterprise discussion.</p>
+          </details>
+        </div>
+      </div>
     </section>
 
-    <section class="section demo-cta" id="demo">
-      <div><p class="eyebrow">Book a Demo</p><h2>Ready to identify revenue at risk before churn happens?</h2><p>Book a 30-minute demo or request a Starter Pilot with your customer data.</p></div>
-      <div class="lead-form">
-        <h3>Book a 30-minute demo</h3>
-        <p>Schedule a short discovery call. After qualification, the prospect can request the Starter Pilot by proposal and invoice.</p>
-        <a class="button primary" href="https://calendly.com/hichamipg1/30min" target="_blank">Book a 30-minute demo</a>
-        <a class="button secondary" href="./assets/AI_Churn_Rescue_Commercial_Proposal.pdf">Download commercial PDF</a>
+    <section class="section final-cta" id="demo">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Book a demo</p>
+          <h2>Ready to identify revenue at risk before churn happens?</h2>
+          <p>Book a 30-minute demo or request a Starter Pilot with your customer data.</p>
+        </div>
+        <div class="demo-box">
+          <h3>Book a 30-minute demo</h3>
+          <p>Schedule a short discovery call. After qualification, the prospect can request the Starter Pilot by proposal and invoice.</p>
+          <div class="cta-row">
+            <a class="button primary" href="https://calendly.com/hichamipg1/30min" target="_blank" rel="noopener">Book a 30-minute demo</a>
+            <a class="button secondary" href="assets/AI_Churn_Rescue_Commercial_Proposal.pdf">Download commercial PDF</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer><div><strong>AI Churn Rescue</strong><p>Customer retention intelligence for B2B companies.</p></div><div><a href="./assets/AI_Churn_Rescue_Commercial_Proposal.pdf">Commercial PDF</a><a href="./data-checklist.html">Data checklist</a><a href="#demo">Book a demo</a></div></footer>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>AI Churn Rescue</h3>
+        <p>Customer retention intelligence for B2B companies.</p>
+      </div>
+      <div class="footer-links">
+        <a href="assets/AI_Churn_Rescue_Commercial_Proposal.pdf">Commercial PDF</a>
+        <a href="data-checklist.html">Data checklist</a>
+        <a href="https://calendly.com/hichamipg1/30min" target="_blank" rel="noopener">Book a demo</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
